@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Implemented a delivery fee calculator using React.js. It is required to enter the Cart Value, Delivery distance , amount of items and time. The delivery fee is computed by taking into account the following rules based on the input data.
+● If the cart value is less than 10€, a small order surcharge is added to the delivery price. The surcharge is the difference between the cart value and 10€.
+● A delivery fee for the first 1km is 2€. If the delivery distance is longer than that, 1€ is added for every additional 500 meters that the courier needs to travel before reaching the destination. Even if the distance would be shorter than 500 meters, the minimum fee is always 1€.
+● If the number of items is five or more, an additional 50 cent surcharge is added for each item above and including the fifth item. An extra "bulk" fee applies for more than 12 items of 1,20€
+● The delivery fee can never be more than 15€, including possible surcharges.
+● The delivery is free (0€) when the cart value is equal or more than 200€.
+● During the Friday rush, 3 - 7 PM, the delivery fee (the total fee including possible
+surcharges) will be multiplied by 1.2x. However, the fee still cannot be more than the max (15€).
 
-## Available Scripts
+## Technical Information
 
-In the project directory, you can run:
+### `Tech Stack`
+
+React.js, TypeScript, ESLint, css, jest
+● Media queries are used to make the app responsive in different screen sizes.
+● Jest and @testing-library/react is used for unit testing.
+● Accessibility props are used in appropriate places.
+● ESLint is used as a code formatter.
+
+# Setup
+
+### `npm install`
+
+# Run App
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Run Tests
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
