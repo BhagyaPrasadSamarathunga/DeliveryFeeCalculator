@@ -9,6 +9,8 @@ Implemented a delivery fee calculator using React.js. It is required to enter th
 * During the Friday rush, 3 - 7 PM, the delivery fee (the total fee including possible
 surcharges) will be multiplied by 1.2x. However, the fee still cannot be more than the max (15€).
 
+<img src="https://github.com/BhagyaPrasadSamarathunga/Assets/blob/main/delivery-fee-calculator.png" width="800" />
+
 ## Technical Information
 
 ### `Tech Stack`
