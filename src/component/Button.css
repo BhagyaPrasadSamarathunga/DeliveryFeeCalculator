@@ -1,0 +1,27 @@
+.Button {
+    font-size: 12px;
+    border: 2px rgb(54, 81, 255) solid;
+    border-radius: 5px;
+    background-color: rgb(54, 81, 255);
+    text-decoration: bold;
+    color: white;
+}
+.Button-disable {
+    font-size: 12px;
+    border: 2px darkgray solid;
+    border-radius: 5px;
+    background-color:rgb(121, 121, 123) solid;
+    text-decoration: bold;
+    color:darkgray;
+}
+
+@media (max-width: 480px) {
+    .Button {
+        font-size: 8px;
+        border-radius: 2px;
+    }
+    .Button-disable {
+        font-size: 8px;
+        border-radius: 2px;
+    }
+}

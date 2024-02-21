@@ -1,0 +1,48 @@
+.Date-time-picker {
+    display: flex;
+    flex: 1;
+    padding: 5px;
+}
+.Date-time-picker-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    width: 100%;
+}
+.Date-picker-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.Calendar-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #bfc1c1 solid;
+}
+.Calendar-container {
+  width: 100%;
+}
+.Date-picker-wraper {
+  display: flex;
+  flex: 1;
+}
+.Date-picker {
+  display: flex;
+  flex: 1;
+  width: 95%;
+  padding: 10px;
+  border: 1px #bfc1c1 solid;
+}
+
+@media (max-width: 480px) {
+  .Date-picker {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 720px) {
+  .Date-picker {
+    width: 85%;
+  }
+}

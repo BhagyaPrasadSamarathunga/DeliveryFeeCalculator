@@ -1,0 +1,10 @@
+.Text-input {
+    border: 1px #bfc1c1 solid;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+.Input-container {
+    display: flex;
+    flex: 1;
+}

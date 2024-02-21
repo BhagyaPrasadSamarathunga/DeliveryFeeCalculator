@@ -1,38 +1,77 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex:1;
+  justify-content: center;
+  font-family:Arial, Helvetica, sans-serif;
+  padding-top: 5%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Delivery-fee-calculator {
+  display: flex;
+  flex:0.5;
+  flex-direction: column;
+  background-color: rgb(245, 242, 242);
+  padding-bottom: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: rgb(54, 81, 255);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Input-component {
+  display: flex;
+  flex-direction:row ;
+  flex: 1;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.Input-component-input-container {
+  display: flex;
+  flex: 2;
+  align-items: center;
+}
+.Input-component-symbol-container {
+  flex: 0.5;
+}
+.Input-component-title-container {
+  flex: 1;
+}
+.Input-component-title {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+}
+.Input-component-symble {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.Button-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+}
+.Price-container {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  .Input-component-title {
+    font-size: 8px;
+    font-weight: 200;
   }
-  to {
-    transform: rotate(360deg);
+  .Input-component-symble {
+    margin-left: 10px;
+    font-size: 8px;
+  }
+  .Price-container {
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 200;
   }
 }
