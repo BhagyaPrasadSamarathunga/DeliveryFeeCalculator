@@ -1,4 +1,4 @@
-# Description
+## Description
 
 Implemented a delivery fee calculator using React.js. It is required to enter the Cart Value, Delivery distance , amount of items and time. The delivery fee is computed by taking into account the following rules based on the input data.
 * If the cart value is less than 10€, a small order surcharge is added to the delivery price. The surcharge is the difference between the cart value and 10€.
@@ -13,7 +13,7 @@ surcharges) will be multiplied by 1.2x. However, the fee still cannot be more th
 
 ## Technical Information
 
-### `Tech Stack`
+## Tech Stack
 
 React.js, TypeScript, ESLint, css, jest
 * Media queries are used to make the app responsive in different screen sizes.
